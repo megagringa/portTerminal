@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio terminal</title>
+  <script src="script.js" type="text/javascript" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main>
+    <div class="header"> bash - Juan Pablo López - Portfolio</div>
+    <div class="terminal" id="terminalWindow">
+      <section id="terminal">
+        <div class="command">Login - <span class="error" id="date"></span></div>
+        <div class="title">Portfolio</div>
+        Hola! Bienvenidos a mi portfolio, para ver la lista de commandos ingresá <span class="command">help</span>
+      </section>
+      <div class="prompt">
+        <span class="command">$</span> <span class="title">gestuser</span> <input id="promtInput" />
+      </div>
+    </div>
+  </main>
+  <div class="hidden" id="promptClone">
+    <span class="command">$</span> <span class="title">gestuser</span> <span class="promtCloneInput"></span>
+    <div class="promtCloneContent"></div>
+  </div>
+  <div class="hidden" id="help">
+    <div class="sectionTitle">Podes ingresar cualquiera de estos comandos: </div>
+    <div class="indent">
+      <div>
+        <span class="command">about</span>:
+        <div class="indent">Sobre mi.</div>
+      </div>
+      <div>
+        <span class="command">social</span>:
+        <div class="indent">Listado de redes sociales.</div>
+      </div>
+      <div>
+        <span class="command">skills</span>:
+        <div class="indent">Herramientas y tecnologías de trabajo.</div>
+      </div>
+      <div>
+        <span class="command">educacion</span>:
+        <div class="indent">Todo sobre mi formación</div>
+      </div>
+      <div>
+        <span class="command">experiencia</span>:
+        <div class="indent">Experiencias y formación.</div>
+      </div>
+      <!--<div>
+          <span class="command">ultimos_proyectos</span>:
+          <div class="indent">Ultimos proyectos realizados..</div> 
+        </div>-->
+      <div>
+        <span class="command">portfolios_antiguos</span>:
+        <div class="indent">Portfolios cuando empezaba a estudiar.</div>
+      </div>
+      <div>
+        <span class="command">clear</span>:
+        <div class="indent">Borrar historial de terminal</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hidden" id="portfolios_antiguos">
+    <div class="sectionTitle">Proyectos: </div>
+    <div class="indent">
+      <span class="title">Portfolio 2019/20/21 </span> - <a href="https://megagringa.github.io/Portafolio/index.html"
+        target="_blank"><span class="command">Link directo.</span> </a>
+    </div>
+    <div class="indent">
+      <span class="title">Portfolio 2022 </span> - <a href="https://megagringa.github.io/Portafolio2/index.html"
+        target="_blank"><span class="command">Link directo.</span> </a>
+    </div>
+  </div>
+
+  <div class="hidden" id="skills">
+    <div class="sectionTitle">Skills: </div>
+    <div class="indent">
+      <div>
+        <span class="command">Programación y Tecnologías</span>:
+        <div class="indent">
+          <span class="title">GIT</span>
+          <span class="title">HTML</span>
+          <span class="title">CSS</span>
+          <span class="title">Javascript</span>
+          <span class="title">Node.js</span>
+          <span class="title">React</span>
+          <span class="title">Python</span>
+          <span class="title">SQL</span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <span class="command">Idiomas</span>:
+          <div class="indent">
+            <span class="title">Español</span>
+            <span class="title">Ingles</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden" id="about">
+      <div class="sectionTitle">Sobre mi: </div>
+      <div class="indent">
+        Hola! mi nombre es <span class="command">Juan Pablo López</span>
+         un desarrollador Full Stack apasionado por la creación de soluciones tecnológicas y la mejora de la
+        experiencia de usuario. Con conocimientos en HTML, CSS, JavaScript, React, Java, Python, SQL, Node.js y Git,
+        estoy comprometido en aprender y mejorar constantemente mis habilidades en el desarrollo de software.
+        Estoy buscando mi primer empleo en el sector tecnológico para poner en práctica mis conocimientos y seguir
+        creciendo profesionalmente. Me considero una persona autodidacta, proactiva y con habilidades de trabajo en
+        equipo.
+        Si estás interesado en conocer más acerca de mi experiencia o habilidades, no dudes en contactarme. Estoy
+        dispuesto a colaborar en proyectos desafiantes y enriquecedores en el ámbito de la tecnología
+      </div>
+    </div>
+
+    <div class="hidden" id="experiencia">
+      <div class="sectionTitle">Experiencia: </div>
+      <div class="indent">
+        <span class="title">FullStack DEV - Empresa Full</span> - <span class="command">En busqueda.</span>
+        <div class="indent">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit harum beatae autem, sit dolorem vitae
+          doloremque explicabo cupiditate, architecto iusto odio culpa facilis voluptatem saepe quis fugiat minus enim
+          qui!
+        </div>
+      </div>
+      <div class="indent">
+        <span class="title">Frontend DEV - Empresa Front</span> - <span class="command">Enero 2018 - Julio 2020</span>
+        <div class="indent">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit harum beatae autem, sit dolorem vitae
+          doloremque explicabo cupiditate, architecto iusto odio culpa facilis voluptatem saepe quis fugiat minus enim
+          qui!
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden" id="social">
+      <div class="sectionTitle">Redes sociales: </div>
+      <div class="indent">
+        <span class="title">Github</span> - <span class="command">https://github.com/user</span>
+      </div>
+      <div class="indent">
+        <span class="title">LinkedIn</span> - <span class="command">https://github.com/megagringa</span>
+      </div>
+    </div>
+
+    <div class="education hidden" id="educacion">
+      <div class="sectionTitle">Formación: </div>
+      <div class="indent">
+        <span class="title">Estudiante de Ing. de Software - Universidad Siglo 21</span> <span class="command">No
+          Finalizado</span>
+        <div class="indent">
+          Estudiante de Ing. de Software en 4to año.
+        </div>
+      </div>
+      <div class="indent">
+        <span class="title">Curso Fullstack - Online</span> <span class="command">Cursado en Egg (No Finalizado)</span>
+        <div class="indent">
+          Estudiante de Egg cursando programación Full Stack.
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
