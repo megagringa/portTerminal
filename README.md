@@ -2,7 +2,7 @@
  
 # [Terminal](https://megagringa.github.io/portTerminal/index.html)
 
-<!--[![Foto-Proyecto]()-->
+![Foto-Proyecto](https://megagringa.github.io/portTerminal/img/terminal.png)
 
 ## 📜 Resumen 📜
 El objetivo del portfolio es generar una página web incorporando los conocimientos adquiridos que permite obtener una simulación de una terminal en linux interactuando con el usuario.
